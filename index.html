@@ -1,23 +1,355 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <style>
-        body {
-            margin: 0 !important;
-            background-color: black;
-        }
-
-      .content {
-        width: 100%;
-        margin: auto;
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luca Alessandro Brazzoli</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+      <style>
+          body {
+              background-color: black;
+          }
+          
+          @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+          
+          
+          .main__container {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                overflow: auto;
+                width: 375px;
+                height: 844px;
+                max-height: 88%;
+                border-radius: 24px;
+                background-color: #fff;
+                          -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+          }
+          
+          @media screen and (max-width: 414px) {
+              .main__container {
+                  width: 100%;
+                  height: auto;
+                      max-height: 100%;
+                  border-radius: 0;
+              }
+          }
+          
+          .screen {
+              display: flex;
+              flex-direction: column;
+                padding: 36px 12px;
+              grid-gap: 24px;
+          }
+          
+          .container {
+              background: #D9D9D9;
+              width: 100%;
+              height: auto;
+              padding: 1px;
+              display: flex;
+              flex-direction: row;
+              grid-gap: 1px;
+          }
+          
+          .link {
+              width: calc(50% - 0.5px);
+              height: auto;
+              border-radius: 24px;
+              background: #fff;
+              padding: 10px;
+          }
+          
+          .text {
+              width: 100%;
+              height: auto;
+              border-radius: 8px;
+              background: #fff;
+              padding: 10px;
+          }
+          
+          a {
+              color: black !important;
+              font-size: 14px;
+              line-height: 120%;
+              letter-spacing: -0.25px;
+              font-family: 'Inter', sans-serif;
+              text-decoration: underline;
+              text-transform: uppercase;
+          }
+          
+          P {
+              color: black !important;
+              font-size: 14px;
+              line-height: 120%;
+              letter-spacing: -0.25px;
+              font-family: 'Inter', sans-serif;
+              margin: 0 !important;
+          }
+          
+          .hero {
+              background: #D9D9D9;
+              width: 100%;
+              height: auto;
+              padding: 1px;
+              display: flex;
+              flex-direction: row;
+              grid-gap: 1px;
+              padding-top: 0 !important;
+              padding-bottom: 0 !important;
+          }
+          
+          .hero__content {
+              width: 100%;
+              height: 574px;
+              border-radius: 8px;
+              background: #fff;
+              position: relative;
+          }
+          
+          .hero__content img {
+                  width: calc(100% - 24px);
+    position: absolute;
+    height: auto !important;
+    left: 12px;
+    bottom: 12px;
+              top: unset;
+             -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+          }
+          
+          .scroll {
+              overflow: hidden;
+          }
+          
+          .image {
+              width: 100%;
+              height: 452px;
+              border-radius: 8px;
+              background: #fff;
+              position: relative;
+              overflow: hidden;
+          }
+          
+          img {
+                  width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+              
+          }
+</style>
   </head>
   <body>
-    <div id="content">
-      <iframe id="myiFrame" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBX1MIv8MWmbGlXpGGVFpzL%2FLuca-Alessandro-Brazzoli---Portfolio%3Fpage-id%3D0%253A1%26node-id%3D512%253A211%26viewport%3D99%252C91%252C0.24%26scaling%3Dcontain%26starting-point-node-id%3D358%253A2535%26hide-ui=1" allowfullscreen></iframe>
+    <div class="main__container">
+        <div class="screen">
+            <!-- hero -->
+                <div class="">
+                    <div class="container">
+                        <div class="link"><a href="https://www.linkedin.com/in/lucabrazzoli/" target="_blank">LINKEDIN</a></div>
+                        <div class="link"><a href="mailto:luca.brazzo87@gmail.com" target="_blank">E-MAIL</a></div>
+                    </div>
+                    <div class="hero">
+                        <div class="hero__content">
+                            <img src="https://raw.githubusercontent.com/lucabrazzoli/lucabrazzoli/main/img/luca-alessandro-brazzoli_logo.svg">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="link"><a href="https://circularagency.com/" target="_blank">CIRCULAR AGENCY</a></div>
+                        <div class="link"><p>2017 – 2023</p></div>
+                    </div>
+                    <div class="container" style="padding-top: 0;">
+                        <div class="text"><p>Milan-based Senior Project Manager and Account with a strong creative attitude and a deep understanding of the processes lying behind brand development, business relationships and positive team leading.</p></div>
+                    </div>
+                </div>
+            <!-- selected-project -->
+                <div>
+                    <div class="container">
+                        <div class="text"><p>SELECTED PROJECTS</p></div>
+                    </div>
+                </div>
+            <!-- main-project-01 -->
+                <div>
+                    <div class="container">
+                        <div class="image">
+                        <img src="https://raw.githubusercontent.com/lucabrazzoli/lucabrazzoli/main/img/main-project_hero_01.jpg">
+                        </div>
+                    </div>
+                    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                        <div class="link"><a href="https://vandutch.com/" target="_blank">CANTIERE DEL PARDO</a></div>
+                        <div class="link"><p>2019 – Today</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>Grand Soleil Yachts, Pardo Yachts and VanDutch Yachts all over communication management.</p></div>
+                    </div>
+                </div>
+            <!-- main-project-02 -->
+            <div>
+                    <div class="container">
+                        <div class="image">
+                        <img src="https://raw.githubusercontent.com/lucabrazzoli/lucabrazzoli/main/img/main-project_hero_02.jpg">
+                        </div>
+                    </div>
+                    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                        <div class="link"><a href="https://www.youtube.com/watch?v=q22_qtNQTsA" target="_blank">NORTH SAILS</a></div>
+                        <div class="link"><p>2019 – Today</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>Go Beyond brand global campaign coordination and management. Brand digital communication and online flagship shop contents development. </p></div>
+                    </div>
+                </div>
+            <!-- main-project-03 -->
+            <div>
+                    <div class="container">
+                        <div class="image">
+                            <img src="https://raw.githubusercontent.com/lucabrazzoli/lucabrazzoli/main/img/main-project_hero_03.jpg">
+                        </div>
+                    </div>
+                    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                        <div class="link"><a href="https://www.instagram.com/p/CXnpx30D4QL/?utm_source=ig_web_copy_link" target="_blank">PATTA</a></div>
+                        <div class="link"><p>2021</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>NIke AM1 drops in Milan management.</p></div>
+                    </div>
+                </div>
+            <!-- main-project-04 -->
+            <div>
+                    <div class="container">
+                        <div class="image">
+                        <img src="https://raw.githubusercontent.com/lucabrazzoli/lucabrazzoli/main/img/main-project_hero_04.jpg">
+                        </div>
+                    </div>
+                    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                        <div class="link"><a href="https://www.acer.com/it-it" target="_blank">ACER</a></div>
+                        <div class="link"><p>2018 – Today</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>Brand online flagship shop and affiliates shops contents development.</p></div>
+                    </div>
+                </div>
+            <!-- main-project-05 -->
+            <div>
+                    <div class="container">
+                        <div class="image">
+                        <img src="https://raw.githubusercontent.com/lucabrazzoli/lucabrazzoli/main/img/main-project_hero_05.jpg">
+                        </div>
+                    </div>
+                    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                        <div class="link"><a href="https://www.dickieslife.com/it_it" target="_blank">DICKIES</a></div>
+                        <div class="link"><p>2019 – 2023</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>Brand online flagship shop and affiliates shops contents development.</p></div>
+                    </div>
+                </div>
+            <!-- main-project-06 -->
+            <div>
+                    <div class="container">
+                        <div class="image">
+                        <img src="https://raw.githubusercontent.com/lucabrazzoli/lucabrazzoli/main/img/main-project_hero_06.jpg">
+                        </div>
+                    </div>
+                    <div class="container" style="padding-top: 0; padding-bottom: 0;">
+                        <div class="link"><a href="https://www.orefici11.com/index.html" target="_blank">TIMBERLAND</a></div>
+                        <div class="link"><p>2017 – 2021</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>EMEA POP brand campaigns development and execution. Global campaign contents development. Brand DAM management. Brand editorial contents development and production. Orefici11 Store website and in-store video development.</p></div>
+                    </div>
+                </div>
+            <!-- more-project -->
+            <div>
+                    <div class="container">
+                        <div class="text"><p>MORE PROJECTS</p></div>
+                    </div>
+                </div>
+            <!-- secondary-project-01 -->
+            <div>
+                    <div class="container" style="padding-bottom: 0;">
+                        <div class="link"><a>DIADORA</a></div>
+                        <div class="link"><p>2023</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>Atomo V7000 and Hidden Power POP furnitures design and development.</p></div>
+                    </div>
+                </div>
+            <!-- secondary-project-02 -->
+                        <div>
+                    <div class="container" style="padding-bottom: 0;">
+                        <div class="link"><a>YOUTH</a></div>
+                        <div class="link"><p>2022</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>Iuter &amp; Octopus capsule collection  e-commerce shooting.</p></div>
+                    </div>
+                </div>
+            <!-- secondary-project-03 -->
+                        <div>
+                    <div class="container" style="padding-bottom: 0;">
+                        <div class="link"><a href="https://ecommerce.ilsole24ore.com/shopping24" target="_blank">IL SOLE 24 ORE</a></div>
+                        <div class="link"><p>2020 – 2022</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>Shopping24 new online shop concept and development.</p></div>
+                    </div>
+                </div>
+            <!-- secondary-project-04 -->
+                        <div>
+                    <div class="container" style="padding-bottom: 0;">
+                        <div class="link"><a>TELESPAZIO</a></div>
+                        <div class="link"><p>2017 – 2020</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>Space Alliance Brand Identity development. Brand videos, infographics and more internal contents development.</p></div>
+                    </div>
+                </div>
+            <!-- secondary-project-05 -->
+                        <div>
+                    <div class="container" style="padding-bottom: 0;">
+                        <div class="link"><a>FORMA BOOTS</a></div>
+                        <div class="link"><p>2018 – 2019</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>New Brand Identity development. Social Media contents management. Brand videos, external and internal editorial contents development. EICMA Exhibitions management.</p></div>
+                    </div>
+                </div>
+            <!-- secondary-project-06 -->
+                        <div>
+                    <div class="container" style="padding-bottom: 0;">
+                        <div class="link"><a>REEF</a></div>
+                        <div class="link"><p>2018 – 2019</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>EMEA POP brand campaign development and execution. Brand DAM development.</p></div>
+                    </div>
+                </div>
+            <!-- secondary-project-07 -->
+                        <div>
+                    <div class="container" style="padding-bottom: 0;">
+                        <div class="link"><a>SPIDI</a></div>
+                        <div class="link"><p>2018 – 2019</p></div>
+                    </div>
+                    <div class="container">
+                        <div class="text"><p>Spidi Tour and Spidi Test&amp;Ride brand activations development and management.</p></div>
+                    </div>
+                </div>
+            <!-- end -->
+                        <div>
+                    <div class="container">
+                        <div class="text"><p>All the projects have been designed at Circular Agency, together with their passionate people.</p></div>
+                    </div>
+                </div>
+      </div>
     </div>
   </body>
 </html>
