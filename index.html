@@ -217,6 +217,22 @@
           }
           .image.slider .dot.active { background: #ffffff; }
           .image.slider[data-slides="1"] .dots { display: none; }
+
+          /* Desktop MacBook mockup slide — video sits behind the mockup PNG through its transparent screen area */
+          .image.slider .slide.desktop-mockup {
+              background-color: #ededed;
+          }
+          .image.slider .slide.desktop-mockup video {
+              top: 30%;
+              left: 11.5%;
+              width: 77%;
+              height: 38.08%;
+              z-index: 1;
+          }
+          .image.slider .slide.desktop-mockup .mockup-frame {
+              z-index: 2;
+              pointer-events: none;
+          }
 </style>
   </head>
   <body>
